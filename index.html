@@ -11,11 +11,12 @@
 
       body {
         font-family: Arial;
-        color: white;
+        color: #222;
+        background-color: #ffffff;
       }
 
       nav {
-        background-color: darkgreen;
+        background-color: #0a1f44;
         padding: 15px 40px;
         display: flex;
         justify-content: space-between;
@@ -28,7 +29,7 @@
       .logo {
         font-size: 22px;
         font-weight: bold;
-        color: yellow;
+        color: #c9a84c;
       }
 
       .nav-links {
@@ -39,15 +40,15 @@
       nav a {
         color: white;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 17px;
       }
 
       nav a:hover {
-        color: yellow;
+        color: #c9a84c;
       }
 
       .hero {
-        background-color: green;
+        background-color: #0a1f44;
         padding: 80px 40px;
         display: flex;
         align-items: center;
@@ -62,20 +63,21 @@
 
       .hero-text h1 {
         font-size: 48px;
+        color: white;
         margin-bottom: 15px;
       }
 
       .hero-text p {
         font-size: 20px;
-        color: #ccffcc;
+        color: #c9a84c;
         margin-bottom: 25px;
       }
 
       .hero-text .btn {
         display: inline-block;
         padding: 12px 30px;
-        background-color: yellow;
-        color: darkgreen;
+        background-color: #c9a84c;
+        color: #0a1f44;
         font-weight: bold;
         border-radius: 5px;
         text-decoration: none;
@@ -84,19 +86,20 @@
 
       .hero-text .btn:hover {
         background-color: white;
+        color: #0a1f44;
       }
 
       .hero-photo {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-color: darkgreen;
-        border: 4px solid yellow;
+        background-color: #1a3a6e;
+        border: 4px solid #c9a84c;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 14px;
-        color: #ccffcc;
+        color: #cccccc;
         text-align: center;
         overflow: hidden;
       }
@@ -109,33 +112,38 @@
       }
 
       .about {
-        background-color: darkgreen;
+        background-color: #f9f9f9;
         padding: 60px 40px;
       }
 
       .about h2 {
         font-size: 32px;
+        color: #0a1f44;
         margin-bottom: 20px;
-        border-bottom: 2px solid yellow;
+        border-bottom: 3px solid #c9a84c;
         padding-bottom: 10px;
+        display: inline-block;
       }
 
       .about p {
         font-size: 18px;
         line-height: 1.8;
         max-width: 700px;
+        color: #444;
       }
 
       .skills {
-        background-color: green;
+        background-color: #ffffff;
         padding: 60px 40px;
       }
 
       .skills h2 {
         font-size: 32px;
+        color: #0a1f44;
         margin-bottom: 30px;
-        border-bottom: 2px solid yellow;
+        border-bottom: 3px solid #c9a84c;
         padding-bottom: 10px;
+        display: inline-block;
       }
 
       .skills-grid {
@@ -145,8 +153,8 @@
       }
 
       .skill-card {
-        background-color: darkgreen;
-        border: 2px solid yellow;
+        background-color: #f0f4ff;
+        border: 2px solid #0a1f44;
         border-radius: 8px;
         padding: 20px 25px;
         min-width: 180px;
@@ -156,24 +164,26 @@
       .skill-card h3 {
         font-size: 18px;
         margin-bottom: 8px;
-        color: yellow;
+        color: #0a1f44;
       }
 
       .skill-card p {
         font-size: 14px;
-        color: #ccffcc;
+        color: #555;
       }
 
       .projects {
-        background-color: darkgreen;
+        background-color: #f9f9f9;
         padding: 60px 40px;
       }
 
       .projects h2 {
         font-size: 32px;
+        color: #0a1f44;
         margin-bottom: 30px;
-        border-bottom: 2px solid yellow;
+        border-bottom: 3px solid #c9a84c;
         padding-bottom: 10px;
+        display: inline-block;
       }
 
       .cards {
@@ -183,34 +193,37 @@
       }
 
       .card {
-        background-color: green;
+        background-color: #ffffff;
         padding: 25px;
         border-radius: 10px;
         width: 300px;
-        border-left: 4px solid yellow;
+        border-left: 4px solid #c9a84c;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       }
 
       .card h3 {
         margin-bottom: 10px;
         font-size: 20px;
+        color: #0a1f44;
       }
 
       .card p {
         font-size: 15px;
         line-height: 1.6;
-        color: #ccffcc;
+        color: #555;
       }
 
       .contact {
-        background-color: green;
+        background-color: #0a1f44;
         padding: 60px 40px;
         text-align: center;
       }
 
       .contact h2 {
         font-size: 32px;
+        color: white;
         margin-bottom: 20px;
-        border-bottom: 2px solid yellow;
+        border-bottom: 3px solid #c9a84c;
         padding-bottom: 10px;
         display: inline-block;
       }
@@ -218,19 +231,24 @@
       .contact p {
         font-size: 18px;
         margin-top: 10px;
+        color: #cccccc;
       }
 
       .contact a {
-        color: yellow;
+        color: #c9a84c;
         text-decoration: none;
       }
 
+      .contact a:hover {
+        color: white;
+      }
+
       footer {
-        background-color: black;
+        background-color: #060f22;
         text-align: center;
         padding: 20px;
         font-size: 14px;
-        color: #aaa;
+        color: #888;
       }
     </style>
   </head>
@@ -251,11 +269,10 @@
       <div class="hero-text">
         <h1>Nkrumah Samuel</h1>
         <p>Data Analyst | Teacher | MPhil Mathematical Statistics [Student], KNUST</p>
-        <a href="#contact" class="btn">Hire Me</a>
+        <a href="#contact" class="btn">Get In Touch</a>
       </div>
-    <div class="hero-photo">
+      <div class="hero-photo">
         <img src="photo..jpeg" alt="Nkrumah Samuel">
-      </div>
       </div>
     </section>
 
