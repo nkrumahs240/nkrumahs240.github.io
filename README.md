@@ -1,19 +1,573 @@
-## About Me
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nkrumah Samuel | Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-Aspiring **Data Analyst & Data Scientist** pursuing an **MPhil in Mathematical Statistics** at Kwame Nkrumah University of Science and Technology (KNUST).
+      body {
+        font-family: Arial;
+        color: #222;
+        background-color: #ffffff;
+      }
 
-I combine a solid academic foundation in advanced statistics and mathematics with practical experience in national data collection and educational research. I have contributed to large-scale data gathering and analysis initiatives with the **Ghana Statistical Service** and **Ghana Education Service**, gaining hands-on expertise in data cleaning, analysis, and evidence-based reporting.
+      nav {
+        background-color: #0a1f44;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
 
-### Technical Skills
-- **Data Analysis & Visualization**: Excel, Power BI (dashboards & reporting)
-- **Programming**: R (statistical computing, predictive modeling, and visualization) — actively developing
-- **Core Competencies**: Statistical analysis, mathematical modeling, data-driven problem solving
+      .logo {
+        font-size: 22px;
+        font-weight: bold;
+        color: #c9a84c;
+      }
 
-### Current Focus
-Building strong capabilities in data analytics and data science. Passionate about transforming complex datasets into actionable insights to solve challenges in education, public policy, and sustainable development.
+      .nav-links {
+        display: flex;
+        gap: 25px;
+      }
 
-Open to collaboration on data-related projects, statistical analysis, and open-source contributions.
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+      }
 
----
+      nav a:hover {
+        color: #c9a84c;
+      }
 
-**Let's connect!** Feel free to reach out if you're working on interesting data problems or opportunities in data analytics and data science.
+      .hero {
+        background-color: #0a1f44;
+        padding: 80px 40px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .hero-text {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      .hero-text h1 {
+        font-size: 48px;
+        color: white;
+        margin-bottom: 15px;
+      }
+
+      .hero-text p {
+        font-size: 20px;
+        color: #c9a84c;
+        margin-bottom: 25px;
+        min-height: 30px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #c9a84c;
+        color: #0a1f44;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .btn:hover {
+        background-color: white;
+        color: #0a1f44;
+      }
+
+      .btn-outline {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 15px;
+        border: 2px solid #c9a84c;
+      }
+
+      .btn-outline:hover {
+        background-color: #c9a84c;
+        color: #0a1f44;
+      }
+
+      .hero-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #1a3a6e;
+        border: 4px solid #c9a84c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .hero-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .about {
+        background-color: #f9f9f9;
+        padding: 60px 40px;
+      }
+
+      .about h2 {
+        font-size: 32px;
+        color: #0a1f44;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #c9a84c;
+        padding-bottom: 10px;
+        display: inline-block;
+      }
+
+      .about p {
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 700px;
+        color: #444;
+      }
+
+      .skills {
+        background-color: #ffffff;
+        padding: 60px 40px;
+      }
+
+      .skills h2 {
+        font-size: 32px;
+        color: #0a1f44;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #c9a84c;
+        padding-bottom: 10px;
+        display: inline-block;
+      }
+
+      .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .skill-card {
+        background-color: #f0f4ff;
+        border: 2px solid #0a1f44;
+        border-radius: 8px;
+        padding: 20px 25px;
+        min-width: 180px;
+        text-align: center;
+      }
+
+      .skill-card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: #0a1f44;
+      }
+
+      .skill-card p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .projects {
+        background-color: #f9f9f9;
+        padding: 60px 40px;
+      }
+
+      .projects h2 {
+        font-size: 32px;
+        color: #0a1f44;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #c9a84c;
+        padding-bottom: 10px;
+        display: inline-block;
+      }
+
+      .cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+        width: 300px;
+        border-left: 4px solid #c9a84c;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #0a1f44;
+      }
+
+      .card p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      .card .tag {
+        display: inline-block;
+        background-color: #0a1f44;
+        color: #c9a84c;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+
+      .card ul {
+        margin: 10px 0 0 18px;
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .contact {
+        background-color: #0a1f44;
+        padding: 60px 40px;
+        text-align: center;
+      }
+
+      .contact h2 {
+        font-size: 32px;
+        color: white;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #c9a84c;
+        padding-bottom: 10px;
+        display: inline-block;
+      }
+
+      .contact p {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #cccccc;
+      }
+
+      .contact a {
+        color: #c9a84c;
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        color: white;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+      }
+
+      .social-links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .whatsapp-btn {
+        background-color: #25D366;
+        color: white;
+      }
+
+      .whatsapp-btn:hover {
+        background-color: #1ebe5d;
+        color: white;
+      }
+
+      .linkedin-btn {
+        background-color: #0077b5;
+        color: white;
+      }
+
+      .linkedin-btn:hover {
+        background-color: #005f8e;
+        color: white;
+      }
+
+      footer {
+        background-color: #060f22;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #888;
+      }
+
+      /* WhatsApp floating icon */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 25px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        z-index: 999;
+      }
+
+      .whatsapp-float:hover {
+        background-color: #1ebe5d;
+        color: white;
+      }
+
+      /* Back to top button */
+      #backToTop {
+        position: fixed;
+        bottom: 95px;
+        right: 25px;
+        background-color: #0a1f44;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        z-index: 999;
+      }
+
+      #backToTop:hover {
+        background-color: #c9a84c;
+        color: #0a1f44;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">Nkrumah Samuel</div>
+      <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h1>Nkrumah Samuel</h1>
+        <p id="typing-text"></p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn">Get In Touch</a>
+          <a href="cv.pdf" download class="btn-outline">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="photo..jpeg" alt="Nkrumah Samuel">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    Aspiring <strong>Data Analyst & Data Scientist</strong> pursuing an <strong>MPhil in Mathematical Statistics</strong> 
+    at Kwame Nkrumah University of Science and Technology (KNUST).
+  </p>
+  <p>
+    I combine a solid academic foundation in advanced statistics and mathematics with practical experience in national 
+    data collection and educational research. I have worked with the <strong>Ghana Statistical Service</strong> and 
+    <strong>Ghana Education Service</strong>, gaining hands-on expertise in data cleaning, analysis, visualization, 
+    and evidence-based reporting.
+  </p>
+
+  <h3>Technical Skills</h3>
+  <ul>
+    <li><strong>Data Analysis & Visualization:</strong> Excel, Power BI (dashboards & reporting)</li>
+    <li><strong>Programming:</strong> R (statistical computing, predictive modeling, and visualization) — actively developing</li>
+    <li><strong>Core Competencies:</strong> Statistical analysis, mathematical modeling, data-driven problem solving</li>
+  </ul>
+
+  <h3>Currently Learning</h3>
+  <ul>
+    <li>Advanced R programming and statistical modeling</li>
+    <li>Machine Learning fundamentals</li>
+  </ul>
+
+  <p>
+    Passionate about turning complex data into actionable insights to solve challenges in education, public policy, 
+    and sustainable development.
+  </p>
+</section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>R Programming</h3>
+          <p>Beginner-level statistical computing as part of MPhil Statistics training at KNUST</p>
+        </div>
+        <div class="skill-card">
+          <h3>SQL / MySQL</h3>
+          <p>Database querying, workforce analytics, data extraction</p>
+        </div>
+        <div class="skill-card">
+          <h3>LaTeX</h3>
+          <p>Academic typesetting, reports, presentations with Beamer</p>
+        </div>
+        <div class="skill-card">
+          <h3>Data Consulting</h3>
+          <p>Statistical advice, interpretation, and reporting for clients</p>
+        </div>
+        <div class="skill-card">
+          <h3>Power BI</h3>
+          <p>Interactive dashboards, data visualisation, business reporting</p>
+        </div>
+        <div class="skill-card">
+          <h3>Microsoft Excel</h3>
+          <p>Data cleaning, pivot tables, statistical functions, reporting</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <span class="tag">Capstone Project</span>
+          <img src="images/excel-dashboard.png" alt="Excel Sales Dashboard" style="width:100%; border-radius:6px; margin-bottom:12px;">
+          <h3>Sales Data Analytics — Excel Dashboard</h3>
+          <p>
+            End-to-end sales analytics project for Capstone Grace Skill Acquisition in Data Analytics. 
+            Cleaned and transformed raw sales data with Power Query, then built a fully interactive 
+            Excel dashboard using PivotTables, PivotCharts, and slicers to track revenue trends, 
+            top-selling items, and order patterns.
+          </p>
+          <ul>
+            <li>Data cleaning & transformation (Power Query)</li>
+            <li>PivotTables & PivotCharts for KPI tracking</li>
+            <li>Interactive slicers for dynamic filtering</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">Capstone Project</span>
+          <img src="images/powerbi-dashboard.png" alt="Power BI Sales Dashboard" style="width:100%; border-radius:6px; margin-bottom:12px;">
+          <h3>Sales Data Analytics — Power BI Dashboard</h3>
+          <p>
+            Companion Power BI dashboard built on the same sales dataset, featuring DAX measures, 
+            drill-down visuals, and a multi-page report layout for exploring revenue performance, 
+            product-level sales, and time-based trends at a glance.
+          </p>
+          <ul>
+            <li>Data modeling & DAX measures</li>
+            <li>Multi-page interactive report</li>
+            <li>Drill-down visuals for revenue & product trends</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:nkrumahs240@gmail.com">nkrumahs240@gmail.com</a></p>
+      <p>Phone: +233 540471000</p>
+      <p>Location: Kumasi, Ghana</p>
+
+      <div class="social-links">
+        <a href="https://wa.me/233540471000" target="_blank" class="whatsapp-btn">
+          💬 WhatsApp Me
+        </a>
+        <a href="https://www.linkedin.com/in/nkrumah-samuel-b59393249/" target="_blank" class="linkedin-btn">
+          in LinkedIn
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Nkrumah Samuel. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/233540471000" target="_blank" class="whatsapp-float">💬</a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+    <script>
+      // Typing animation
+      const texts = [
+        "Data Analyst",
+        "Statistical Consultant",
+        "MPhil Statistics Student, KNUST",
+        "Mathematics Educator"
+      ];
+      let textIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const typingEl = document.getElementById("typing-text");
+
+      function type() {
+        const current = texts[textIndex];
+        if (isDeleting) {
+          typingEl.textContent = current.substring(0, charIndex--);
+        } else {
+          typingEl.textContent = current.substring(0, charIndex++);
+        }
+        if (!isDeleting && charIndex === current.length + 1) {
+          isDeleting = true;
+          setTimeout(type, 1500);
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          textIndex = (textIndex + 1) % texts.length;
+          setTimeout(type, 400);
+        } else {
+          setTimeout(type, isDeleting ? 50 : 80);
+        }
+      }
+      type();
+
+      // Back to top visibility
+      window.addEventListener("scroll", () => {
+        document.getElementById("backToTop").style.display =
+          window.scrollY > 300 ? "flex" : "none";
+      });
+    </script>
+
+  </body>
+</html>
