@@ -234,6 +234,24 @@
         color: #555;
       }
 
+      .card .tag {
+        display: inline-block;
+        background-color: #0a1f44;
+        color: #c9a84c;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+
+      .card ul {
+        margin: 10px 0 0 18px;
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+      }
+
       .contact {
         background-color: #0a1f44;
         padding: 60px 40px;
@@ -418,7 +436,6 @@
   </p>
 </section>
 
-
     <section class="skills" id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
@@ -453,12 +470,35 @@
       <h2>Projects</h2>
       <div class="cards">
         <div class="card">
-          <h3>WTI Crude Oil Analysis</h3>
-          <p>Structural break analysis of WTI crude oil prices using R. Includes Chow test, CUSUM, and Bai-Perron estimation.</p>
+          <span class="tag">Capstone Project</span>
+          <img src="images/excel-dashboard.png" alt="Excel Sales Dashboard" style="width:100%; border-radius:6px; margin-bottom:12px;">
+          <h3>Sales Data Analytics — Excel Dashboard</h3>
+          <p>
+            End-to-end sales analytics project for Capstone Grace Skill Acquisition in Data Analytics. 
+            Cleaned and transformed raw sales data with Power Query, then built a fully interactive 
+            Excel dashboard using PivotTables, PivotCharts, and slicers to track revenue trends, 
+            top-selling items, and order patterns.
+          </p>
+          <ul>
+            <li>Data cleaning & transformation (Power Query)</li>
+            <li>PivotTables & PivotCharts for KPI tracking</li>
+            <li>Interactive slicers for dynamic filtering</li>
+          </ul>
         </div>
         <div class="card">
-          <h3>Agricultural Yield Prediction</h3>
-          <p>Applying statistical models to oil palm yield data for smallholder farmers in Ghana.</p>
+          <span class="tag">Capstone Project</span>
+          <img src="images/powerbi-dashboard.png" alt="Power BI Sales Dashboard" style="width:100%; border-radius:6px; margin-bottom:12px;">
+          <h3>Sales Data Analytics — Power BI Dashboard</h3>
+          <p>
+            Companion Power BI dashboard built on the same sales dataset, featuring DAX measures, 
+            drill-down visuals, and a multi-page report layout for exploring revenue performance, 
+            product-level sales, and time-based trends at a glance.
+          </p>
+          <ul>
+            <li>Data modeling & DAX measures</li>
+            <li>Multi-page interactive report</li>
+            <li>Drill-down visuals for revenue & product trends</li>
+          </ul>
         </div>
       </div>
     </section>
